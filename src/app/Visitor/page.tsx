@@ -79,7 +79,7 @@ export default function VisitorCard() {
           {/* QR Code and Booking ID */}
           <div className='mt-12 absolute bottom-16 flex flex-col justify-start items-start gap-2'>
             <div className='flex flex-row justify-center gap-8'>
-              <QRCodeCanvas value={registration.link} className='p-2 border border-zinc-800 rounded-md border-dashed'/>
+              <QRCodeCanvas value={registration.link} className='p-2 border bg-white border-zinc-800 rounded-md border-dashed'/>
               <div className='gap-4 flex flex-col'>
                 <div className='flex flex-col leading-2'>
                   <span className='text-zinc-500 font-medium tracking-tighter'>Booking ID</span>
