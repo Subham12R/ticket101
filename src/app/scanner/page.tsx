@@ -110,10 +110,25 @@ export default function ScannerPage() {
   const handleReset = () => {
     setVerificationResult(null);
     setScannedUrl('');
+    toast.info('Ready to scan', { description: 'Position QR code in camera view' });
   };
 
   return (
     <main className="min-h-screen bg-linear-to-br from-zinc-950 via-zinc-900 to-black flex flex-col">
+      {/* Toast Notifications */}
+      <Toaster
+        position="top-center"
+        richColors
+        expand={true}
+        toastOptions={{
+          style: {
+            background: '#18181b',
+            border: '1px solid #27272a',
+            color: '#ffffff',
+          },
+          className: 'sonner-toast',
+        }}
+      />
       {/* Header */}
       <div className="w-full bg-zinc-900/50 backdrop-blur-xl border-b border-zinc-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
